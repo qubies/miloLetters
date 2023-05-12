@@ -58,9 +58,10 @@ set_words()
 
 class App(tkinter.Frame):
     def __init__(self, master=None):
+        root.configure(background='white')
         tkinter.Frame.__init__(self, master)
         self.master = master
-        self.label = tkinter.Label(text="", fg="Black", font=("Helvetica", 64))
+        self.label = tkinter.Label(text="", fg="Black", font=("Helvetica", 64), background="white")
         self.label.place(x=200, y=200)
         self.correct_button = tkinter.Button(text="Correct", command=self.correct)#.pack(pady=5)
         self.correct_button.place(x=100, y=800)
